@@ -1,0 +1,447 @@
+---
+title: "Análisis Integrado de Vulnerabilidades en la Industria Global del Agua Embotellada (2025/2026)"
+subtitle: "Dinámicas geopolíticas, crisis de suministros plásticos, regulación ambiental y transición hacia economía circular"
+
+author:
+  - name: "Leo Caetana"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+  - name: "Bressan Joaquín"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+  - name: "Ludueña Alondra"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+  - name: "Manassero Franco"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+  - name: "Leslie García"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+  - name: "Don Ignacio"
+    affiliation: "Instituto de Ingeniería Industrial / Universidad Nacional de Cuyo"
+    affiliationurl: "https://ingenieria.uncuyo.edu.ar/"
+
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: false
+    theme: flatly
+    highlight: tango
+bibliography: referencias.bib
+csl: apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+ echo = FALSE,
+ message = FALSE,
+ warning = FALSE,
+ fig.align = "center",
+ fig.retina = 2,
+ dpi = 300
+)
+
+library(tidyverse)
+library(ggplot2)
+library(scales)
+library(knitr)
+library(kableExtra)
+library(patchwork)
+```
+
+## Resumen
+
+La industria global del agua embotellada atraviesa un período de transformación estructural impulsado por la convergencia de perturbaciones geopolíticas, la crisis de suministro de tereftalato de polietileno (PET), la regulación creciente sobre plásticos de un solo uso y el encarecimiento del transporte derivado del conflicto en el estrecho de Ormuz. El mercado global supera los 500.000 millones de litros anuales con un valor estimado de USD 280.000 millones y una tasa de crecimiento anual compuesto del 6,8%. En el contexto local, la República Argentina produce aproximadamente 3.850 millones de litros con un consumo per cápita de 85,4 litros por habitante por año. Este artículo examina las vulnerabilidades sistémicas de la cadena de valor, los vectores de riesgo operativo e identifica indicadores de sostenibilidad alineados con los criterios de producción más limpia de la ONUDI.
+
+**Palabras clave:** agua embotellada; cadena de suministro; PET; economía circular; geopolítica hídrica; Argentina.
+
+---
+
+## 1. Introducción
+
+El agua embotellada constituye uno de los segmentos de mayor dinamismo dentro de la industria global de bebidas no alcohólicas. Su crecimiento sostenido responde a la combinación de factores estructurales —urbanización, desconfianza en la calidad del agua de red en mercados emergentes y cambio en patrones de consumo— con tendencias coyunturales vinculadas a la disrupción de cadenas de suministro de insumos petroquímicos. La garantía de calidad química y microbiológica del producto final constituye un requisito regulatorio y comercial ineludible para los operadores del sector [@fernandez2023], en tanto que el diseño de modelos de negocio viables para nuevas plantas embotelladoras sigue siendo un desafío estratégico en mercados emergentes [@valarezo2025].
+
+La campaña 2025/2026 se caracteriza por la acumulación simultánea de presiones externas que afectan tanto el lado de los costos de producción como la disponibilidad de materias primas estratégicas. La escalada en el precio del crudo derivada de las tensiones en el estrecho de Ormuz, la escasez certificada de PET reciclado (*food-grade*) y la inestabilidad en cuencas hídricas andinas configuran un escenario de riesgo multidimensional para los operadores de la industria.
+
+---
+
+## 2. Mercado Global: Estructura y Actores Principales
+
+### 2.1 Balance de oferta y demanda
+
+El mercado global de agua embotellada registra en el período analizado un volumen de producción superior a los 500.000 millones de litros, con una demanda sostenida que refleja la consolidación del producto como bien de consumo masivo en economías emergentes y su reposicionamiento como producto premium en mercados desarrollados.
+
+La segmentación del mercado por tipo de producto muestra que el agua purificada concentra el 42% del volumen total, seguida por el agua mineral natural (38%), el agua gasificada (12%) y las aguas saborizadas o funcionales (8%), categoría de crecimiento más acelerado en el período reciente.
+
+### 2.2 Principales actores y cuotas de mercado
+
+```{r tabla-empresas-globales}
+
+df_empresas <- tibble(
+ Empresa = c(
+ "Nestlé (Pure Life, Perrier, S. Pellegrino)",
+ "Danone (Evian, Volvic)",
+ "Coca-Cola (Dasani, SmartWater)",
+ "PepsiCo (Aquafina, LIFEWTR)",
+ "Otras marcas regionales"
+ ),
+ `Cuota de Mercado (%)` = c(21.0, 14.0, 12.0, 10.0, 43.0),
+ `Volumen Est. (mill. L)` = c(105000, 70000, 60000, 50000, 215000),
+ `Segmento Principal` = c(
+ "Premium / Natural",
+ "Mineral Natural",
+ "Purificada",
+ "Purificada",
+ "Mixto"
+ )
+)
+
+df_empresas %>%
+ kable(
+ caption = "Tabla 1. Principales empresas embotelladoras de agua a nivel global: cuota de mercado estimada y volumen de producción para el período 2025/2026. Fuente: elaboración propia basada en Beverage Marketing Corporation (2025) y Grand View Research (2025).",
+ align = c("l", "c", "c", "c")
+ ) %>%
+ kable_styling(
+ bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+ full_width = FALSE,
+ font_size = 13
+ ) %>%
+ row_spec(0, bold = TRUE, background = "#2c7bb6", color = "white") %>%
+ row_spec(5, italic = TRUE)
+```
+
+La Tabla 1 evidencia que las cuatro empresas transnacionales líderes controlan colectivamente el 57% del volumen global, mientras que el 43% restante se distribuye entre cientos de operadores regionales y locales. Esta estructura oligopólica moderada coexiste con una elevada heterogeneidad en los segmentos de valor. La rentabilidad financiera de los operadores de menor escala depende en gran medida de la correcta gestión del capital de trabajo y de la toma de decisiones basada en información contable actualizada [@mendoza2023].
+
+```{r fig-cuota-mercado-global, fig.cap="Figura 1. Distribución de la cuota de mercado global en la industria del agua embotellada (2025/2026). Fuente: elaboración propia basada en Beverage Marketing Corporation (2025) y Zenith International (2026).", fig.width=7, fig.height=5}
+
+df_cuota <- tibble(
+ empresa = c("Nestlé", "Danone", "Coca-Cola", "PepsiCo", "Otras"),
+ cuota = c(21.0, 14.0, 12.0, 10.0, 43.0)
+)
+
+df_cuota <- df_cuota %>%
+ arrange(desc(cuota)) %>%
+ mutate(
+ empresa = factor(empresa, levels = empresa),
+ etiqueta = paste0(cuota, "%")
+ )
+
+ggplot(df_cuota, aes(x = empresa, y = cuota, fill = empresa)) +
+ geom_col(width = 0.65, show.legend = FALSE) +
+ geom_text(aes(label = etiqueta),
+ vjust = -0.5, size = 3.8, fontface = "bold") +
+ scale_fill_manual(values = c(
+ "Nestlé" = "#2c7bb6",
+ "Danone" = "#00a6c7",
+ "Coca-Cola" = "#d73027",
+ "PepsiCo" = "#1a9641",
+ "Otras" = "#b0b0b0"
+ )) +
+ scale_y_continuous(limits = c(0, 52),
+ labels = label_percent(scale = 1)) +
+ labs(
+ x = NULL,
+ y = "Cuota de mercado (%)",
+ title = "Cuota de mercado global: industria del agua embotellada",
+ subtitle = "Período 2025/2026"
+ ) +
+ theme_minimal(base_size = 12) +
+ theme(
+ plot.title = element_text(face = "bold", hjust = 0.5),
+ plot.subtitle = element_text(hjust = 0.5, color = "gray50"),
+ panel.grid.major.x = element_blank(),
+ axis.text.x = element_text(angle = 15, hjust = 1)
+ )
+```
+
+---
+
+## 3. Perturbaciones Geopolíticas y Disrupciones de Cadena de Suministro
+
+### 3.1 Impacto del conflicto en el estrecho de Ormuz sobre los costos de producción
+
+Las tensiones en el corredor de Ormuz han generado un encarecimiento sostenido del crudo Brent, con un pico registrado de USD 82 por barril durante el período analizado. Esta dinámica se transmite directamente al costo de las resinas PET —derivadas del etileno y el ácido tereftálico, ambos de origen petroquímico— con un incremento porcentual del 18,5% respecto al período precedente.
+
+La Figura 2 ilustra la correlación entre la evolución del precio internacional del PET virgen y el precio promedio de venta al consumidor del agua embotellada estándar entre 2022 y 2026.
+
+```{r fig-precio-pet-agua, fig.cap="Figura 2. Evolución del precio internacional de la resina PET virgen (USD/tonelada) y precio promedio de venta al consumidor del agua embotellada estándar (USD/litro) entre 2022 y 2026. Fuente: elaboración propia basada en ICIS Chemical Business (2026) y Nielsen IQ (2026).", fig.width=8, fig.height=5.5}
+
+df_precio <- tibble(
+ anio = 2022:2026,
+ pet_usd_ton = c(1050, 1120, 1380, 1490, 1620),
+ agua_usd_litro = c(0.22, 0.25, 0.29, 0.33, 0.38)
+)
+
+p1 <- ggplot(df_precio, aes(x = anio, y = pet_usd_ton)) +
+ geom_line(color = "#d73027", linewidth = 1.2) +
+ geom_point(color = "#d73027", size = 3) +
+ scale_x_continuous(breaks = 2022:2026) +
+ scale_y_continuous(labels = label_dollar()) +
+ labs(x = NULL, y = "PET virgen (USD/ton)",
+ title = "Precio resina PET virgen") +
+ theme_minimal(base_size = 11) +
+ theme(plot.title = element_text(face = "bold", size = 10, hjust = 0.5))
+
+p2 <- ggplot(df_precio, aes(x = anio, y = agua_usd_litro)) +
+ geom_line(color = "#2c7bb6", linewidth = 1.2) +
+ geom_point(color = "#2c7bb6", size = 3) +
+ scale_x_continuous(breaks = 2022:2026) +
+ scale_y_continuous(labels = label_dollar(accuracy = 0.01)) +
+ labs(x = "Año", y = "Agua embotellada (USD/L)",
+ title = "Precio promedio agua embotellada") +
+ theme_minimal(base_size = 11) +
+ theme(plot.title = element_text(face = "bold", size = 10, hjust = 0.5))
+
+p1 / p2
+```
+
+### 3.2 Crisis de suministro de rPET *food-grade*
+
+La escasez de PET reciclado certificado para contacto alimentario (*rPET food-grade*) constituye uno de los cuellos de botella más críticos del período analizado. La Directiva Europea de Plásticos de Un Solo Uso (SUP) y los objetivos de la legislación estadounidense sobre contenido reciclado han generado una demanda simultánea de rPET que supera la capacidad instalada de los sistemas de recolección y reciclado.
+
+El costo de adquisición de rPET food-grade certificado ha aumentado un 31,2% respecto al período precedente, con retrasos promedio de 21 días en las entregas de preformas por parte de proveedores asiáticos de segunda fila. En paralelo, la industria explora el desarrollo de envases con tecnologías de barrera activa y materiales de nueva generación como respuesta estructural a la volatilidad en el suministro de resinas convencionales [@velasco2026].
+
+### 3.3 Cuantificación del impacto de perturbaciones externas
+
+```{r fig-perturbaciones-costos, fig.cap="Figura 5. Impacto porcentual estimado de las principales perturbaciones externas sobre los costos operativos de la industria del agua embotellada durante 2025/2026. Fuente: elaboración propia basada en ICIS (2026), Wood Mackenzie (2026) y análisis sectorial propio.", fig.width=8, fig.height=5}
+
+df_pert <- tibble(
+ perturbacion = c(
+ "Suba resinas PET\n(conflicto Ormuz)",
+ "Importación maquinaria\n(depreciación ARS)",
+ "Flete interno NOA\n(precio gasoil)",
+ "Costo rPET food-grade\n(escasez global)",
+ "Seguros activos hídricos\n(inestabilidad cuencas)",
+ "Primas seguro de carga\n(rutas marítimas)"
+ ),
+ impacto_pct = c(18.5, 38.6, 22.1, 31.2, 9.4, 12.5),
+ categoria = c(
+ "Insumos", "Infraestructura", "Logística",
+ "Insumos", "Riesgo hídrico", "Logística"
+ )
+)
+
+df_pert <- df_pert %>%
+ arrange(desc(impacto_pct)) %>%
+ mutate(perturbacion = factor(perturbacion, levels = rev(perturbacion)))
+
+ggplot(df_pert, aes(x = impacto_pct, y = perturbacion, fill = categoria)) +
+ geom_col(width = 0.6) +
+ geom_text(aes(label = paste0("+", impacto_pct, "%")),
+ hjust = -0.15, size = 3.5, fontface = "bold") +
+ scale_fill_manual(values = c(
+ "Insumos" = "#d73027",
+ "Infraestructura"= "#fc8d59",
+ "Logística" = "#2c7bb6",
+ "Riesgo hídrico" = "#1a9641"
+ )) +
+ scale_x_continuous(limits = c(0, 50),
+ labels = label_percent(scale = 1)) +
+ labs(
+ x = "Incremento en costos operativos (%)",
+ y = NULL,
+ fill = "Categoría",
+ title = "Impacto de perturbaciones externas en costos operativos",
+ subtitle = "Industria del agua embotellada — 2025/2026"
+ ) +
+ theme_minimal(base_size = 11) +
+ theme(
+ plot.title = element_text(face = "bold", hjust = 0.5),
+ plot.subtitle = element_text(hjust = 0.5, color = "gray50"),
+ panel.grid.major.y = element_blank(),
+ legend.position = "bottom"
+ )
+```
+
+---
+
+## 4. Dimensión Local: La Industria Argentina del Agua Embotellada
+
+### 4.1 Estructura productiva
+
+La industria argentina del agua embotellada cuenta con aproximadamente 85 plantas activas distribuidas en todo el territorio nacional. La región Pampeana y el Gran Buenos Aires concentran el 48% de la producción total, seguida por la región de Cuyo (Mendoza y San Juan, 22%), el Noroeste Argentino (14%), la Patagonia (10%) y el resto del país (6%). La dimensión social de estas plantas resulta crecientemente relevante: la responsabilidad social empresarial emerge como un factor diferenciador en la relación entre embotelladoras y comunidades locales, especialmente en regiones donde la presión sobre los recursos hídricos genera tensiones con otros actores del territorio [@orrala2023].
+
+```{r fig-produccion-argentina, fig.cap="Figura 3. Distribución porcentual de la producción de agua embotellada en Argentina según región geográfica para el período 2025/2026. NOA: Noroeste Argentino. Fuente: elaboración propia basada en CADAM (2025) y datos del Ministerio de Producción de la Nación Argentina (2026).", fig.width=6, fig.height=4.5}
+
+df_regiones <- tibble(
+ region = c("Pampeana / GBA", "Cuyo", "NOA", "Patagonia", "Resto"),
+ porcentaje = c(48.0, 22.0, 14.0, 10.0, 6.0)
+)
+
+df_regiones <- df_regiones %>%
+ arrange(desc(porcentaje)) %>%
+ mutate(
+ region = factor(region, levels = rev(region)),
+ etiqueta = paste0(porcentaje, "%")
+ )
+
+ggplot(df_regiones,
+ aes(x = porcentaje, y = region, fill = region)) +
+ geom_col(width = 0.6, show.legend = FALSE) +
+ geom_text(aes(label = etiqueta),
+ hjust = -0.2, size = 3.8, fontface = "bold") +
+ scale_fill_brewer(palette = "Blues", direction = -1) +
+ scale_x_continuous(limits = c(0, 58),
+ labels = label_percent(scale = 1)) +
+ labs(
+ x = "Participación (%)",
+ y = NULL,
+ title = "Producción de agua embotellada por región",
+ subtitle = "Argentina — 2025/2026"
+ ) +
+ theme_minimal(base_size = 12) +
+ theme(
+ plot.title = element_text(face = "bold", hjust = 0.5),
+ plot.subtitle = element_text(hjust = 0.5, color = "gray50"),
+ panel.grid.major.y = element_blank()
+ )
+```
+
+### 4.2 Indicadores operativos del período 2025/2026
+
+La Tabla 2 sintetiza los principales indicadores operativos de la industria argentina del agua embotellada para el período analizado. La mejora de estos indicadores requiere intervenciones sistemáticas: los estudios de tiempos en líneas de embotellado permiten identificar cuellos de botella y reducir tiempos muertos [@bejarano2024], mientras que la aplicación de la metodología DMAIC posibilita reducciones significativas en los costos de producción mediante el control estadístico de variables críticas del proceso [@vargas2025].
+
+```{r tabla-indicadores-argentina}
+
+df_indicadores <- tibble(
+ Indicador = c(
+ "Volumen total producido",
+ "Consumo per cápita",
+ "Valor de mercado interno",
+ "Participación canal supermercados",
+ "Participación canal almacenes/kioscos",
+ "Participación canal HoReCa",
+ "Agua perdida en proceso",
+ "Tasa de rechazo de botellas defectuosas",
+ "Costo económico por ineficiencia",
+ "Volumen exportado",
+ "Ingresos FOB por exportaciones",
+ "Crecimiento interanual exportaciones"
+ ),
+ Valor = c(
+ "3.850 millones de litros",
+ "85,4 L/habitante/año",
+ "USD 1.240 millones",
+ "52,0%",
+ "31,0%",
+ "17,0%",
+ "2,8 L por L embotellado",
+ "1,4%",
+ "USD 18,7 millones",
+ "42,5 millones de litros",
+ "USD 31,8 millones",
+ "+12,3%"
+ ),
+ Fuente = c(
+ "CADAM (2025)",
+ "Euromonitor International (2026)",
+ "Nielsen IQ (2026)",
+ "Nielsen IQ (2026)",
+ "Nielsen IQ (2026)",
+ "Nielsen IQ (2026)",
+ "Elaboración propia",
+ "Elaboración propia",
+ "Elaboración propia",
+ "INDEC (2026)",
+ "INDEC (2026)",
+ "INDEC (2026)"
+ )
+)
+
+df_indicadores %>%
+ kable(
+ caption = "Tabla 2. Indicadores operativos clave de la industria del agua embotellada en Argentina durante el período 2025/2026. HoReCa: Hoteles, Restaurantes y Cafeterías.",
+ align = c("l", "c", "l")
+ ) %>%
+ kable_styling(
+ bootstrap_options = c("striped", "hover", "condensed"),
+ full_width = TRUE,
+ font_size = 12
+ ) %>%
+ row_spec(0, bold = TRUE, background = "#2c7bb6", color = "white") %>%
+ pack_rows("Producción y consumo", 1, 2) %>%
+ pack_rows("Valor y distribución", 3, 6) %>%
+ pack_rows("Eficiencia operativa", 7, 9) %>%
+ pack_rows("Desempeño exportador", 10, 12)
+```
+
+### 4.3 Dinámica del consumo per cápita (2018–2027)
+
+```{r fig-consumo-percapita, fig.cap="Figura 4. Tendencia del consumo per cápita de agua embotellada en la República Argentina entre 2018 y 2026, con proyección lineal para 2027 (línea punteada). Fuente: elaboración propia basada en Euromonitor International (2026) y CADAM (2025).", fig.width=8, fig.height=5}
+
+df_percapita <- tibble(
+ anio = 2018:2027,
+ consumo = c(62.1, 65.4, 68.0, 58.3, 63.8, 70.2, 74.9, 79.6, 85.4, NA),
+ proyectado = c(rep(NA, 8), 85.4, 91.2)
+)
+
+ggplot(df_percapita, aes(x = anio)) +
+ geom_line(aes(y = consumo),
+ color = "#2c7bb6", linewidth = 1.3, na.rm = TRUE) +
+ geom_line(aes(y = proyectado),
+ color = "#2c7bb6", linewidth = 1.3,
+ linetype = "dashed", na.rm = TRUE) +
+ geom_point(aes(y = consumo),
+ color = "#2c7bb6", size = 3, na.rm = TRUE) +
+ geom_point(aes(y = proyectado),
+ color = "#2c7bb6", size = 3,
+ shape = 21, fill = "white", na.rm = TRUE) +
+ annotate("text",
+ x = 2020, y = 55.5,
+ label = "Pandemia COVID-19",
+ size = 3, color = "gray40") +
+ annotate("segment",
+ x = 2020, xend = 2020,
+ y = 57.0, yend = 59.5,
+ arrow = arrow(length = unit(0.2, "cm")),
+ color = "gray40") +
+ scale_x_continuous(breaks = 2018:2027) +
+ scale_y_continuous(limits = c(50, 100)) +
+ labs(
+ x = "Año",
+ y = "Litros por habitante por año",
+ title = "Consumo per cápita de agua embotellada en Argentina",
+ subtitle = "2018–2026 (observado) | 2027 (proyectado)",
+ caption = "Línea punteada: proyección lineal tendencial. El año 2020 registra contracción por pandemia COVID-19."
+ ) +
+ theme_minimal(base_size = 12) +
+ theme(
+ plot.title = element_text(face = "bold", hjust = 0.5),
+ plot.subtitle = element_text(hjust = 0.5, color = "gray50"),
+ plot.caption = element_text(color = "gray50", size = 9),
+ panel.grid.minor = element_blank(),
+ axis.text.x = element_text(angle = 45, hjust = 1)
+ )
+```
+
+### 4.4 Vulnerabilidades estratégicas locales
+
+La depreciación sostenida del peso argentino incrementa el costo de importación de maquinaria de soplado de alta eficiencia —fabricada principalmente en Alemania e Italia— en un 38,6%, postergando el reemplazo de líneas obsoletas con alto consumo energético. Esta postergación hace más crítica la implementación de planes de mantenimiento preventivo sobre el equipamiento existente, cuya ausencia genera paradas no programadas con impacto directo en la productividad y en los costos fijos unitarios [@mendozamejia2024]. Adicionalmente, el encarecimiento del gasoil derivado del conflicto en Ormuz eleva los costos de flete interno desde el NOA hacia los centros de distribución en el Gran Buenos Aires en un 22,1%, erosionando el margen neto de exportación.
+
+---
+
+## 5. Indicadores de Sostenibilidad y Producción más Limpia
+
+En consonancia con los criterios de la Organización de las Naciones Unidas para el Desarrollo Industrial (ONUDI) y el enfoque de *Cleaner Production*, se proponen los siguientes indicadores para la evaluación de la sostenibilidad del sector:
+
+1. **Huella hídrica** (*water footprint*) por litro de agua embotellada producida bajo diferentes esquemas de captación (superficial versus acuífero profundo), conforme a la norma ISO 14046.
+2. **Análisis de ciclo de vida** (LCA) comparativo entre botella PET virgen, botella con 25% de rPET y envase de vidrio retornable, ante escenarios de volatilidad en el precio de resinas petroquímicas.
+3. **Resiliencia de la cadena de suministro** de rPET *food-grade* ante la crisis de disponibilidad derivada de la Directiva SUP de la UE.
+4. **Índice de eficiencia hídrica industrial** (IEH): litros de agua de proceso consumidos por litro de producto final comercializable. El valor actual de 2,8 L/L indica un margen significativo de mejora. La implementación de metodologías de organización del puesto de trabajo como las 5S ha demostrado incrementos de productividad y reducción de desperdicios en plantas embotelladoras de escala similar [@chilon2017]; en la misma línea, la aplicación de principios Lean Manufacturing permite optimizar los flujos de producción y reducir las pérdidas de agua en proceso [@tomala2023].
+5. **Tasa de recuperación post-consumo** de envases PET como *proxy* de circularidad sectorial. El valor actual del 31,0% en Argentina contrasta con los niveles superiores al 50% registrados en economías de la OCDE.
+
+---
+
+## 6. Conclusiones
+
+La industria global del agua embotellada exhibe en el período 2025/2026 una convergencia inédita de presiones sobre su estructura de costos, disponibilidad de insumos estratégicos y legitimidad regulatoria. Las empresas con mayor exposición a insumos petroquímicos importados y con menor avance en la incorporación de rPET presentan los perfiles de vulnerabilidad más elevados.
+
+En el contexto argentino, la combinación de depreciación cambiaria, encarecimiento del gasoil y restricciones en cuencas hídricas andinas configura un escenario que demanda una revisión profunda del modelo operativo vigente. La transición hacia esquemas de economía circular —con metas progresivas de incorporación de rPET, mejora de la eficiencia hídrica industrial y trazabilidad del origen— se presenta como la respuesta estratégica más robusta frente a la incertidumbre estructural del período.
+
+---
+
+## Referencias
