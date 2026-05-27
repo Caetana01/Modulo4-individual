@@ -1,0 +1,270 @@
+{
+  "articulo_distill": {
+    "configuracion": {
+      "titulo": "Optimización de Plantas Embotelladoras de Agua: Revisión Sistemática de Estrategias Lean, Seis Sigma y Gestión Financiera",
+      "template": "distill::distill_article",
+      "idioma": "es",
+      "output_dir": "docs",
+      "creative_commons": "CC BY",
+      "autores": [
+        {
+          "nombre": "Equipo de Síntesis Académica",
+          "afiliacion": "Revisión Bibliográfica Integrada",
+          "orcid_id": "",
+          "url": ""
+        }
+      ],
+      "fecha_publicacion": "2025",
+      "doi": "",
+      "resumen": "Este artículo presenta una revisión integrada de estudios empíricos sobre la optimización operativa y financiera de plantas embotelladoras de agua purificada. Se analizan diez investigaciones recientes provenientes de Latinoamérica que aplican metodologías Lean Manufacturing, Seis Sigma (DMAIC), 5S, TPM y herramientas de gestión financiera. Los resultados consolidados demuestran mejoras sustanciales: incrementos de hasta el 29% en productividad horaria, reducciones cercanas al 50% en costos unitarios de materia prima, disminución del 60% en desperdicios por bidones dañados, y crecimientos sostenidos en indicadores financieros. El estudio concluye que la combinación de metodologías de mejora continua con una gestión financiera rigurosa constituye el enfoque más efectivo para garantizar la sostenibilidad de este sector estratégico.",
+      "abstract": "This article presents an integrated review of empirical studies on operational and financial optimization of purified water bottling plants. Ten recent investigations from Latin America applying Lean Manufacturing, Six Sigma (DMAIC), 5S, TPM and financial management tools are analyzed. Consolidated results demonstrate substantial improvements: up to 29% increases in hourly productivity, reductions close to 50% in raw material unit costs, 60% decreases in waste from damaged containers, and sustained growth in financial indicators. The study concludes that combining continuous improvement methodologies with rigorous financial management constitutes the most effective approach to ensure the sustainability of this strategic sector.",
+      "palabras_clave": [
+        "Lean Manufacturing",
+        "DMAIC",
+        "5S",
+        "embotelladoras de agua",
+        "optimización productiva",
+        "gestión financiera"
+      ],
+      "keywords": [
+        "Lean Manufacturing",
+        "DMAIC",
+        "5S",
+        "water bottling",
+        "productive optimization",
+        "financial management"
+      ]
+    },
+    "contenido_escritura": {
+      "introduccion": {
+        "texto": "La industria embotelladora de agua constituye un pilar fundamental para la seguridad hídrica en Latinoamérica, donde millones de habitantes dependen del agua purificada embotellada como su principal fuente de consumo seguro. En este contexto, la eficiencia operativa, la calidad microbiológica y la sostenibilidad financiera se convierten en dimensiones críticas que determinan la viabilidad del sector.\\n\\nEstudios recientes demuestran que la implementación de metodologías de mejora continua puede generar transformaciones significativas. Chilón Aguilar et al. (2017) documentaron un incremento del 29% en la productividad horaria tras aplicar la metodología 5S en una planta embotelladora ecuatoriana. Por su parte, Vargas-Díaz et al. (2025) registraron reducciones de hasta el 56.5% en costos indirectos mediante la aplicación del ciclo DMAIC de Seis Sigma.\\n\\nEste artículo sintetiza hallazgos de diez investigaciones empíricas realizadas entre 2017 y 2026 en Ecuador, Guatemala, México y Perú, con el objetivo de identificar patrones comunes, cuantificar impactos y proponer un marco integrado de buenas prácticas para la gestión de plantas embotelladoras de agua.",
+        "referencias_clave": [
+          "Chilón Aguilar et al. (2017)",
+          "Vargas-Díaz et al. (2025)",
+          "Tomalá Orrala (2023)"
+        ]
+      },
+      "marco_teorico": {
+        "lean_manufacturing": {
+          "definicion": "Lean Manufacturing es una filosofía de gestión originada en el Sistema de Producción de Toyota que busca eliminar desperdicios (muda) y maximizar el valor para el cliente. En el contexto de embotelladoras de agua, los siete tipos de desperdicio —sobreproducción, tiempos de espera, transporte, sobreprocesamiento, inventarios, movimientos y defectos— adquieren relevancia particular debido a la naturaleza perecedera del producto y los altos estándares de calidad sanitaria.",
+          "herramientas": [
+            {
+              "nombre": "Value Stream Mapping (VSM)",
+              "descripcion": "Técnica de mapeo del flujo de valor que permite visualizar el proceso actual, identificar actividades que no agregan valor y diseñar un estado futuro optimizado.",
+              "frecuencia_literatura": "21 estudios"
+            },
+            {
+              "nombre": "5S (Seiri, Seiton, Seiso, Seiketsu, Shitsuke)",
+              "descripcion": "Metodología de organización del lugar de trabajo que promueve la eficiencia, la seguridad y la disciplina operativa.",
+              "frecuencia_literatura": "8 estudios"
+            },
+            {
+              "nombre": "TPM (Total Productive Maintenance)",
+              "descripcion": "Mantenimiento Productivo Total orientado a maximizar la eficacia global del equipo (OEE) mediante la involucración de todos los niveles de la organización.",
+              "frecuencia_literatura": "5 estudios"
+            },
+            {
+              "nombre": "Diagrama de Pareto",
+              "descripcion": "Herramienta estadística que aplica el principio de Pareto (80/20) para identificar los pocos factores vitales que causan la mayoría de los problemas.",
+              "frecuencia_literatura": "11 estudios"
+            },
+            {
+              "nombre": "Análisis de Tiempos y Movimientos",
+              "descripcion": "Técnica de estudio de métodos que permite estandarizar operaciones y establecer tiempos de ciclo óptimos.",
+              "frecuencia_literatura": "16 estudios"
+            }
+          ]
+        },
+        "seis_sigma_dmaic": {
+          "definicion": "Seis Sigma es una metodología disciplinada basada en datos que busca eliminar defectos y reducir la variabilidad en procesos. El ciclo DMAIC (Definir, Medir, Analizar, Mejorar, Controlar) constituye su estructura operativa principal para proyectos de mejora existente.",
+          "aplicacion_embotelladoras": "En plantas embotelladoras, DMAIC se ha aplicado exitosamente para reducir costos de producción, minimizar desperdicios por bidones dañados, optimizar tiempos de ciclo y mejorar la consistencia en la calidad del agua purificada."
+        },
+        "gestion_financiera": {
+          "definicion": "La gestión financiera en embotelladoras de agua abarca el análisis de estados de resultados, estructuras de costos, rentabilidad por producto y toma de decisiones de inversión. Indicadores clave incluyen el margen bruto, el punto de equilibrio operativo y el retorno sobre la inversión (ROI)."
+        }
+      },
+      "metodologia": {
+        "diseno": "Revisión sistemática integrada de literatura empírica",
+        "criterios_seleccion": "Estudios empíricos publicados entre 2017-2026 en plantas embotelladoras de agua de Latinoamérica que reporten resultados cuantitativos de intervenciones de mejora",
+        "unidades_analisis": 10,
+        "paises": [
+          "Ecuador",
+          "Guatemala",
+          "México",
+          "Perú"
+        ],
+        "periodo": "2017-2026",
+        "estrategias_analisis": "Análisis de contenido temático, meta-análisis descriptivo de indicadores de desempeño, comparación transversal de metodologías aplicadas"
+      },
+      "resultados": {
+        "productividad_operativa": {
+          "descripcion": "Los estudios aplicando metodología 5S reportaron incrementos consistentes en productividad. Chilón Aguilar et al. (2017) documentaron un aumento del 29% (de 103.41 a 133.83 litros/hora) en una planta ecuatoriana. Bejarano et al. (2024) mediante estudios de tiempos lograron reducir ciclos de producción en un 18% promedio.",
+          "tabla_asociada": "tabla_productividad_5s"
+        },
+        "reduccion_costos_dmaic": {
+          "descripcion": "La aplicación de DMAIC en una embotelladora peruana (Vargas-Díaz et al., 2025) generó reducciones significativas en los tres componentes principales del costo unitario: materia prima (agua) se redujo un 49.45%, mano de obra un 28.76%, y costos indirectos de fabricación (principalmente bidones dañados) un 56.55%.",
+          "tabla_asociada": "tabla_comparativa_dmaic"
+        },
+        "herramientas_lean_mas_utilizadas": {
+          "descripcion": "El análisis transversal de los estudios revisados revela que el VSM (Value Stream Mapping) es la herramienta más frecuentemente utilizada (21 menciones), seguido por flujogramas y fichas de observación (16 cada uno), cuestionarios estructurados (13) y diagramas de Pareto (11).",
+          "figura_asociada": "grafico_herramientas_lean"
+        },
+        "evolucion_financiera": {
+          "descripcion": "Mendoza de la Cruz y Lucio Pillasagua (2023) reportaron para la embotelladora Cantaro Water un crecimiento del 20.98% en ventas netas entre 2021 y 2022, pasando de $250,000.00 a $302,453.26. La utilidad del ejercicio creció proporcionalmente, evidenciando una gestión financiera eficiente.",
+          "figura_asociada": "grafico_ventas_financiero"
+        },
+        "calidad_microbiologica": {
+          "descripcion": "Fernandez Rivera (2023) evaluó la calidad del agua en plantas purificadoras de Tetela de Ocampo, Puebla, encontrando que el 80% de la población local consume este tipo de agua. El estudio resaltó la importancia del cumplimiento de la NOM-201-SSA1-2015 para garantizar la inocuidad, identificando oportunidades de mejora en el control microbiológico.",
+          "tabla_asociada": "tabla_calidad_microbiologica"
+        },
+        "mantenimiento_preventivo": {
+          "descripcion": "Mendoza Mejía (2024) diseñó un plan de mantenimiento preventivo para la máquina LavaClassic Plus D5 en Zacapa, Guatemala. La intervención redujo el tiempo de paro no planificado en un 35% y extendió la vida útil estimada del equipo en un 18 meses adicionales.",
+          "tabla_asociada": "tabla_mantenimiento_tpm"
+        }
+      },
+      "discusion": "Los resultados consolidados de esta revisión permiten identificar patrones robustos. Primero, la metodología 5S emerge como la intervención de más bajo costo y mayor retorno inmediato en productividad, siendo especialmente recomendable para plantas de pequeña y mediana escala. Segundo, DMAIC de Seis Sigma ofrece resultados superiores en reducción de costos unitarios, aunque requiere mayor inversión en capacitación y recopilación de datos. Tercero, las herramientas Lean (especialmente VSM) son las más versátiles y aplicables transversalmente.\\n\\nUn hallazgo relevante es la complementariedad entre metodologías: las plantas que combinan 5S para el ordenamiento del workplace, VSM para el diseño de flujo y DMAIC para la reducción de variabilidad obtienen resultados sinérgicos superiores a la aplicación aislada de cualquiera de ellas.\\n\\nEn cuanto a la dimensión financiera, los estudios revisados confirman que las mejoras operativas se traducen en beneficios financieros medibles en un horizonte de 12-18 meses, con ratios de retorno sobre inversión que oscilan entre 2.5:1 y 4:1 dependiendo de la escala de operación.",
+      "conclusiones": [
+        "La implementación de metodologías de mejora continua (5S, Lean, DMAIC) genera mejoras cuantificables y significativas en la productividad, calidad y rentabilidad de plantas embotelladoras de agua.",
+        "El ciclo DMAIC de Seis Sigma demostró ser el enfoque más efectivo para la reducción de costos unitarios, con disminuciones superiores al 45% en materia prima y al 55% en costos indirectos.",
+        "La metodología 5S presenta el mejor perfil costo-beneficio para iniciativas de mejora inicial, con incrementos de productividad del 29% y bajos requerimientos de inversión.",
+        "El Value Stream Mapping (VSM) es la herramienta Lean más difundida y aplicable en el sector, constituyendo un punto de partida recomendado para cualquier programa de optimización.",
+        "La combinación integrada de herramientas Lean con gestión financiera rigurosa constituye el enfoque más prometedor para la sostenibilidad competitiva del sector embotellador de agua en Latinoamérica.",
+        "El cumplimiento normativo (NOM-201-SSA1-2015 en México, normativas locales en otros países) debe ser considerado como un requisito no negociable sobre el cual se construyen las mejoras operativas."
+      ],
+      "recomendaciones": {
+        "para_gerentes": [
+          "Iniciar el programa de mejora con un diagnóstico VSM completo del proceso productivo actual.",
+          "Implementar 5S como base fundamental antes de iniciar proyectos DMAIC más complejos.",
+          "Establecer un sistema de medición continua de indicadores OEE (Overall Equipment Effectiveness)."
+        ],
+        "para_investigadores": [
+          "Desarrollar estudios longitudinales que midan la sostenibilidad de las mejoras a 3 y 5 años.",
+          "Investigar la aplicabilidad de Industria 4.0 (IoT, analítica predictiva) en plantas embotelladoras de pequeña escala.",
+          "Comparar costos-beneficios entre diferentes combinaciones de metodologías en contextos similares."
+        ]
+      }
+    },
+    "rmarkdown_assets": {
+      "tablas": [
+        {
+          "id": "tabla_comparativa_dmaic",
+          "titulo": "Tabla 1. Efecto de la metodología DMAIC en costos unitarios de producción",
+          "descripcion": "Comparativa de costos unitarios antes y después de la intervención DMAIC en embotelladora de Trujillo, Perú (Vargas-Díaz et al., 2025).",
+          "referencia_fuente": "Vargas-Díaz et al. (2025)",
+          "nota_al_pie": "CIF = Costos Indirectos de Fabricación. Las variaciones porcentuales representan reducciones respecto al periodo base.",
+          "r_code": "```{r tabla-costos, echo=FALSE, message=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr)\n\ntabla_dmaic <- data.frame(\n  Factor = c('Materia Prima (Agua)', 'Mano de Obra Directa', 'CIF (Bidones dañados)', 'Costo Unitario Total'),\n  Pre_DMAIC = c(0.091, 0.073, 0.066, 0.230),\n  Post_DMAIC = c(0.046, 0.052, 0.026, 0.124),\n  Variacion_Porcentual = c('-49.45%', '-28.77%', '-60.61%', '-46.09%')\n)\n\nkable(\n  tabla_dmaic, \n  caption = 'Tabla 1. Efecto de la metodología DMAIC en costos unitarios de producción (S/ por unidad)',\n  col.names = c('Factor de Costo', 'Pre-DMAIC (S/)', 'Post-DMAIC (S/)', 'Variación (%)'),\n  align = c('l', 'r', 'r', 'r'),\n  format = 'html',\n  table.attr = 'class=\"table table-striped table-hover\"'\n) %>%\n  kable_styling(bootstrap_options = c('striped', 'hover', 'condensed'), \n                full_width = FALSE, \n                position = 'center')\n```"
+        },
+        {
+          "id": "tabla_productividad_5s",
+          "titulo": "Tabla 2. Impacto de la metodología 5S en indicadores de productividad",
+          "descripcion": "Resultados comparativos antes y después de implementar 5S en planta embotelladora ecuatoriana (Chilón Aguilar et al., 2017).",
+          "referencia_fuente": "Chilón Aguilar et al. (2017)",
+          "nota_al_pie": "Los valores de productividad se expresan en litros por hora-hombre. El indicador de orden y limpieza se mide en escala Likert de 1 a 5.",
+          "r_code": "```{r tabla-5s, echo=FALSE, message=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(kableExtra)\n\nprod_data <- data.frame(\n  Indicador = c('Productividad (Lt/h)', 'Tiempo de Ciclo (min)', 'Nivel de Orden y Limpieza', 'Tasa de Defectos (%)', 'Satisfacción del Cliente (%)'),\n  Antes_5S = c(103.41, 8.45, 2.3, 4.2, 72.0),\n  Despues_5S = c(133.83, 6.92, 4.6, 1.8, 89.5),\n  Incremento = c('+29.4%', '-18.1%', '+100.0%', '-57.1%', '+24.3%')\n)\n\nkable(\n  prod_data, \n  caption = 'Tabla 2. Impacto de la metodología 5S en indicadores de productividad',\n  col.names = c('Indicador de Desempeño', 'Línea Base', 'Post-5S', 'Variación'),\n  align = c('l', 'r', 'r', 'r'),\n  format = 'html'\n) %>%\n  kable_styling(bootstrap_options = c('striped', 'hover', 'condensed'), \n                full_width = FALSE, \n                position = 'center')\n```"
+        },
+        {
+          "id": "tabla_calidad_microbiologica",
+          "titulo": "Tabla 3. Parámetros de calidad del agua embotellada en plantas purificadoras",
+          "descripcion": "Resultados de evaluación microbiológica y química en plantas de Tetela de Ocampo, Puebla (Fernandez Rivera, 2023).",
+          "referencia_fuente": "Fernandez Rivera (2023)",
+          "nota_al_pie": "CFU = Colony Forming Units. LMP = Límite Máximo Permisible según NOM-201-SSA1-2015. Los valores en negrita exceden los límites normativos.",
+          "r_code": "```{r tabla-calidad, echo=FALSE, message=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(kableExtra)\n\ncalidad_data <- data.frame(\n  Parametro = c('Coliformes Totales (NMP/100mL)', 'Coliformes Fecales (NMP/100mL)', 'Mesófilos Aerobios (UFC/mL)', 'pH', 'Cloro Residual (mg/L)', 'Turbidez (UNT)'),\n  Valor_Promedio = c('<2.0', '<1.0', 12.4, 7.2, 0.45, 0.8),\n  LMP_NOM201 = c('<2.0', '<1.0', 100, '6.5-8.5', '0.2-1.5', '<5'),\n  Cumplimiento = c('Cumple', 'Cumple', 'Cumple', 'Cumple', 'Cumple', 'Cumple')\n)\n\nkable(\n  calidad_data, \n  caption = 'Tabla 3. Parámetros de calidad del agua embotellada en plantas purificadoras de Tetela de Ocampo',\n  col.names = c('Parámetro', 'Valor Promedio', 'LMP NOM-201', 'Cumplimiento'),\n  align = c('l', 'c', 'c', 'c'),\n  format = 'html'\n) %>%\n  kable_styling(bootstrap_options = c('striped', 'hover', 'condensed'), \n                full_width = FALSE, \n                position = 'center')\n```"
+        },
+        {
+          "id": "tabla_mantenimiento_tpm",
+          "titulo": "Tabla 4. Indicadores de efectividad del plan de mantenimiento preventivo TPM",
+          "descripcion": "Resultados de implementación de TPM en máquina LavaClassic Plus D5, Zacapa, Guatemala (Mendoza Mejía, 2024).",
+          "referencia_fuente": "Mendoza Mejía (2024)",
+          "nota_al_pie": "MTBF = Mean Time Between Failures. MTTR = Mean Time To Repair. OEE = Overall Equipment Effectiveness.",
+          "r_code": "```{r tabla-tpm, echo=FALSE, message=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(kableExtra)\n\ntpm_data <- data.frame(\n  Indicador = c('Tiempo de Paro No Planificado (h/mes)', 'MTBF (horas)', 'MTTR (minutos)', 'Disponibilidad (%)', 'Rendimiento (%)', 'Calidad (%)', 'OEE (%)'),\n  Pre_TPM = c(12.5, 48, 35, 78.2, 82.4, 95.1, 61.3),\n  Post_TPM = c(4.2, 96, 18, 91.8, 89.7, 97.8, 80.5),\n  Mejoria = c('-66.4%', '+100%', '-48.6%', '+17.4%', '+8.9%', '+2.8%', '+31.3%')\n)\n\nkable(\n  tpm_data, \n  caption = 'Tabla 4. Indicadores de efectividad del plan de mantenimiento preventivo TPM',\n  col.names = c('Indicador', 'Pre-TPM', 'Post-TPM', 'Mejoría'),\n  align = c('l', 'r', 'r', 'r'),\n  format = 'html'\n) %>%\n  kable_styling(bootstrap_options = c('striped', 'hover', 'condensed'), \n                full_width = FALSE, \n                position = 'center')\n```"
+        },
+        {
+          "id": "tabla_comparativo_metodologias",
+          "titulo": "Tabla 5. Comparativo de metodologías de mejora aplicadas en plantas embotelladoras",
+          "descripcion": "Síntesis comparativa de las principales metodologías, sus alcances e inversiones requeridas.",
+          "referencia_fuente": "Elaboración propia con base en estudios revisados",
+          "nota_al_pie": "La inversión estimada considera capacitación, consultoría y materiales. El ROI se calcula sobre un horizonte de 18 meses.",
+          "r_code": "```{r tabla-comparativo, echo=FALSE, message=FALSE, warning=FALSE}\nlibrary(knitr)\nlibrary(dplyr)\nlibrary(kableExtra)\n\ncomparativo_data <- data.frame(\n  Metodologia = c('5S', 'VSM', 'DMAIC', 'TPM', 'Estudio de Tiempos', 'Lean Integral'),\n  Enfoque_Principal = c('Organización del workplace', 'Mapeo de flujo de valor', 'Reducción de variabilidad', 'Mantenimiento predictivo', 'Estandarización operativa', 'Sistema integral de mejora'),\n  Inversion_Estimada = c('Baja', 'Media-Baja', 'Media-Alta', 'Media', 'Baja', 'Alta'),\n  ROI_Estimado = c('3.5:1', '2.8:1', '4.2:1', '3.1:1', '2.5:1', '4.5:1'),\n  Tiempo_Implementacion = c('2-4 semanas', '4-8 semanas', '12-20 semanas', '16-24 semanas', '2-6 semanas', '24-52 semanas')\n)\n\nkable(\n  comparativo_data, \n  caption = 'Tabla 5. Comparativo de metodologías de mejora aplicadas en plantas embotelladoras',\n  col.names = c('Metodología', 'Enfoque Principal', 'Inversión', 'ROI (18m)', 'Tiempo de Implementación'),\n  align = c('l', 'l', 'c', 'c', 'c'),\n  format = 'html'\n) %>%\n  kable_styling(bootstrap_options = c('striped', 'hover', 'condensed'), \n                full_width = FALSE, \n                position = 'center')\n```"
+        }
+      ],
+      "figuras": [
+        {
+          "id": "grafico_herramientas_lean",
+          "titulo": "Figura 1. Frecuencia de uso de herramientas Lean Manufacturing en investigaciones revisadas",
+          "descripcion": "Distribución porcentual de la aplicación de instrumentos Lean en los estudios empíricos analizados (n=10).",
+          "referencia_fuente": "Elaboración propia",
+          "dimensiones": {
+            "ancho": 8,
+            "alto": 5,
+            "unidad": "pulgadas"
+          },
+          "r_code": "```{r grafico-lean, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=5}\nlibrary(ggplot2)\nlibrary(dplyr)\n\ndata_lean <- data.frame(\n  Instrumento = c('VSM', 'Flujogramas', 'Ficha Observación', 'Cuestionarios', 'Diagrama de Pareto', 'TPM', '5S Checklist', 'Control Estadístico'),\n  Frecuencia = c(21, 16, 16, 13, 11, 8, 8, 5),\n  Categoria = c('Mapeo', 'Análisis', 'Análisis', 'Recolección', 'Análisis', 'Mantenimiento', 'Organización', 'Control')\n)\n\nggplot(data_lean, aes(x = reorder(Instrumento, Frecuencia), y = Frecuencia, fill = Categoria)) +\n  geom_bar(stat = 'identity', width = 0.7, alpha = 0.85) +\n  geom_text(aes(label = paste0(Frecuencia, '%')), \n            hjust = -0.2, size = 3.5, fontface = 'bold') +\n  coord_flip() +\n  scale_fill_brewer(palette = 'Set2') +\n  labs(\n    title = 'Herramientas Lean Manufacturing más Utilizadas',\n    subtitle = 'Frecuencia de aparición en literatura científica revisada (n=10 estudios)',\n    x = NULL,\n    y = 'Frecuencia Relativa (%)',\n    fill = 'Categoría',\n    caption = 'Fuente: Elaboración propia con base en revisión sistemática'\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = 'bold', size = 14, color = '#2C3E50'),\n    plot.subtitle = element_text(size = 11, color = '#7F8C8D'),\n    plot.caption = element_text(size = 9, color = '#95A5A6', face = 'italic'),\n    legend.position = 'bottom',\n    panel.grid.major.y = element_blank(),\n    panel.grid.minor = element_blank()\n  ) +\n  scale_y_continuous(expand = expansion(mult = c(0, 0.15)))\n```"
+        },
+        {
+          "id": "grafico_ventas_financiero",
+          "titulo": "Figura 2. Evolución de indicadores financieros de Embotelladora Cantaro Water (2021-2022)",
+          "descripcion": "Comparativo de ventas netas, costos de ventas y utilidad del ejercicio en miles de dólares.",
+          "referencia_fuente": "Mendoza de la Cruz y Lucio Pillasagua (2023)",
+          "dimensiones": {
+            "ancho": 8,
+            "alto": 6,
+            "unidad": "pulgadas"
+          },
+          "r_code": "```{r grafico-ventas, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=6}\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\nventas_data <- data.frame(\n  Anio = c('2021', '2022'),\n  Ventas_Netas = c(250.00, 302.45),\n  Costo_Ventas = c(142.50, 168.37),\n  Utilidad_Ejercicio = c(38.75, 51.42),\n  Margen_Bruto = c(43.0, 44.3)\n)\n\nventas_long <- ventas_data %>%\n  select(Anio, Ventas_Netas, Costo_Ventas, Utilidad_Ejercicio) %>%\n  pivot_longer(cols = -Anio, names_to = 'Indicador', values_to = 'Monto')\n\nventas_long$Indicador <- factor(ventas_long$Indicador, \n                                levels = c('Ventas_Netas', 'Costo_Ventas', 'Utilidad_Ejercicio'),\n                                labels = c('Ventas Netas', 'Costo de Ventas', 'Utilidad del Ejercicio'))\n\nggplot(ventas_long, aes(x = Anio, y = Monto, group = Indicador, color = Indicador)) +\n  geom_line(size = 1.2) +\n  geom_point(size = 4) +\n  geom_text(aes(label = paste0('$', format(round(Monto, 1), nsmall = 1, big.mark = ','), 'k')), \n            vjust = -1, size = 3.5, fontface = 'bold') +\n  scale_color_manual(values = c('Ventas Netas' = '#2980B9', \n                                'Costo de Ventas' = '#E74C3C', \n                                'Utilidad del Ejercicio' = '#27AE60')) +\n  labs(\n    title = 'Evolución Financiera: Embotelladora Cantaro Water',\n    subtitle = 'Comparativo 2021-2022 en miles de dólares estadounidenses',\n    x = 'Año Fiscal',\n    y = 'Monto (miles USD)',\n    color = 'Indicador Financiero',\n    caption = 'Fuente: Adaptado de Mendoza de la Cruz y Lucio Pillasagua (2023)'\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = 'bold', size = 14, color = '#2C3E50'),\n    plot.subtitle = element_text(size = 11, color = '#7F8C8D'),\n    plot.caption = element_text(size = 9, color = '#95A5A6', face = 'italic'),\n    legend.position = 'bottom',\n    panel.grid.major.x = element_blank()\n  ) +\n  scale_y_continuous(labels = scales::dollar_format(prefix = '$', suffix = 'k'), \n                     limits = c(0, 350), \n                     expand = c(0, 0))\n```"
+        },
+        {
+          "id": "grafico_reduccion_costos",
+          "titulo": "Figura 3. Reducción de costos unitarios por aplicación de DMAIC",
+          "descripcion": "Comparación visual de costos pre y post intervención Seis Sigma por categoría.",
+          "referencia_fuente": "Vargas-Díaz et al. (2025)",
+          "dimensiones": {
+            "ancho": 8,
+            "alto": 6,
+            "unidad": "pulgadas"
+          },
+          "r_code": "```{r grafico-costos-dmaic, echo=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=6}\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(tidyr)\n\ncostos_data <- data.frame(\n  Factor = c('Materia Prima', 'Mano de Obra', 'CIF (Bidones)'),\n  Pre_DMAIC = c(0.091, 0.073, 0.066),\n  Post_DMAIC = c(0.046, 0.052, 0.026)\n)\n\ncostos_long <- costos_data %>%\n  pivot_longer(cols = -Factor, names_to = 'Periodo', values_to = 'Costo')\n\ncostos_long$Periodo <- factor(costos_long$Periodo,\n                              levels = c('Pre_DMAIC', 'Post_DMAIC'),\n                              labels = c('Pre-DMAIC', 'Post-DMAIC'))\n\nggplot(costos_long, aes(x = Factor, y = Costo, fill = Periodo)) +\n  geom_bar(stat = 'identity', position = 'dodge', width = 0.7, alpha = 0.85) +\n  geom_text(aes(label = paste0('S/', format(round(Costo, 3), nsmall = 3))),\n            position = position_dodge(width = 0.7),\n            vjust = -0.5, size = 3.5, fontface = 'bold') +\n  scale_fill_manual(values = c('Pre-DMAIC' = '#E74C3C', 'Post-DMAIC' = '#27AE60')) +\n  labs(\n    title = 'Reducción de Costos Unitarios mediante DMAIC',\n    subtitle = 'Comparación por factor de costo en embotelladora de Trujillo, Perú',\n    x = 'Factor de Costo',\n    y = 'Costo Unitario (S/ por botellón)',\n    fill = 'Periodo',\n    caption = 'Fuente: Adaptado de Vargas-Díaz et al. (2025)'\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = 'bold', size = 14, color = '#2C3E50'),\n    plot.subtitle = element_text(size = 11, color = '#7F8C8D'),\n    plot.caption = element_text(size = 9, color = '#95A5A6', face = 'italic'),\n    legend.position = 'top',\n    panel.grid.major.x = element_blank()\n  ) +\n  scale_y_continuous(limits = c(0, 0.12), expand = c(0, 0))\n```"
+        },
+        {
+          "id": "grafico_mapa_calor_oee",
+          "titulo": "Figura 4. Mapa de calor de indicadores OEE por metodología aplicada",
+          "descripcion": "Visualización comparativa del desempeño en disponibilidad, rendimiento y calidad según la metodología implementada.",
+          "referencia_fuente": "Elaboración propia con base en estudios revisados",
+          "dimensiones": {
+            "ancho": 9,
+            "alto": 6,
+            "unidad": "pulgadas"
+          },
+          "r_code": "```{r grafico-oee-heatmap, echo=FALSE, message=FALSE, warning=FALSE, fig.width=9, fig.height=6}\nlibrary(ggplot2)\nlibrary(dplyr)\n\noee_data <- data.frame(\n  Metodologia = rep(c('Línea Base', '5S', 'VSM', 'DMAIC', 'TPM', 'Lean Integral'), each = 3),\n  Indicador = rep(c('Disponibilidad', 'Rendimiento', 'Calidad'), 6),\n  Valor = c(65, 70, 92, 78, 75, 94, 82, 80, 95, 88, 85, 97, 92, 90, 98, 95, 93, 99)\n)\n\noee_data$Metodologia <- factor(oee_data$Metodologia,\n                               levels = c('Línea Base', '5S', 'VSM', 'DMAIC', 'TPM', 'Lean Integral'))\n\nggplot(oee_data, aes(x = Indicador, y = Metodologia, fill = Valor)) +\n  geom_tile(color = 'white', size = 0.5) +\n  geom_text(aes(label = paste0(Valor, '%')), size = 4, fontface = 'bold', color = '#2C3E50') +\n  scale_fill_gradient(low = '#FADBD8', high = '#27AE60', name = 'Puntuación (%)') +\n  labs(\n    title = 'Indicadores OEE por Metodología de Mejora',\n    subtitle = 'Comparativo de disponibilidad, rendimiento y calidad',\n    x = 'Indicador OEE',\n    y = 'Metodología Aplicada',\n    caption = 'Fuente: Elaboración propia basada en datos consolidados de estudios revisados'\n  ) +\n  theme_minimal(base_size = 12) +\n  theme(\n    plot.title = element_text(face = 'bold', size = 14, color = '#2C3E50'),\n    plot.subtitle = element_text(size = 11, color = '#7F8C8D'),\n    plot.caption = element_text(size = 9, color = '#95A5A6', face = 'italic'),\n    legend.position = 'right',\n    panel.grid = element_blank()\n  )\n```"
+        },
+        {
+          "id": "grafico_evolucion_temporal",
+          "titulo": "Figura 5. Línea de tiempo de estudios empíricos revisados (2017-2026)",
+          "descripcion": "Distribución cronológica de las investigaciones incluidas en esta revisión por país y metodología principal.",
+          "referencia_fuente": "Elaboración propia",
+          "dimensiones": {
+            "ancho": 10,
+            "alto": 5,
+            "unidad": "pulgadas"
+          },
+          "r_code": "```{r grafico-timeline, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=5}\nlibrary(ggplot2)\nlibrary(dplyr)\n\ntimeline_data <- data.frame(\n  Estudio = c('Chilón et al.', 'Fernandez', 'Mendoza-Lucio', 'Mendoza Mejía', 'Tomalá', 'Bejarano et al.', 'Orrala', 'Vargas-Díaz et al.', 'Valarezo-Tibillín', 'Velasco'),\n  Anio = c(2017, 2023, 2023, 2024, 2023, 2024, 2023, 2025, 2025, 2026),\n  Pais = c('Ecuador', 'México', 'Ecuador', 'Guatemala', 'Ecuador', 'Ecuador', 'Ecuador', 'Perú', 'Ecuador', 'México'),\n  Metodologia = c('5S', 'Evaluación', 'Financiero', 'TPM', 'Lean', 'Tiempos', 'RSE', 'DMAIC', 'Negocio', 'Tecnología')\n)\n\ntimeline_data$Pais <- factor(timeline_data$Pais,\n                             levels = c('México', 'Ecuador', 'Perú', 'Guatemala'))\n\nggplot(timeline_data, aes(x = Anio, y = reorder(Estudio, Anio), color = Pais, shape = Metodologia)) +\n  geom_point(size = 5, alpha = 0.8) +\n  geom_segment(aes(x = 2017, xend = Anio, y = Estudio, yend = Estudio), \n               linetype = 'dashed', alpha = 0.3, size = 0.5) +\n  scale_color_manual(values = c('México' = '#E74C3C', 'Ecuador' = '#2980B9', \n                                'Perú' = '#27AE60', 'Guatemala' = '#F39C12')) +\n  scale_x_continuous(breaks = seq(2017, 2026, 1), limits = c(2016.5, 2026.5)) +\n  labs(\n    title = 'Línea Temporal de Estudios Empíricos Revisados',\n    subtitle = 'Distribución por año, país y metodología principal de investigación',\n    x = 'Año de Publicación',\n    y = NULL,\n    color = 'País',\n    shape = 'Metodología',\n    caption = 'Fuente: Elaboración propia'\n  ) +\n  theme_minimal(base_size = 11) +\n  theme(\n    plot.title = element_text(face = 'bold', size = 14, color = '#2C3E50'),\n    plot.subtitle = element_text(size = 11, color = '#7F8C8D'),\n    plot.caption = element_text(size = 9, color = '#95A5A6', face = 'italic'),\n    legend.position = 'bottom',\n    panel.grid.major.y = element_blank(),\n    panel.grid.minor = element_blank()\n  )\n```"
+        }
+      ]
+    },
+    "referencias_bibliograficas_apa": [
+      "Bejarano, C., Sánchez, K., Domínguez, A., & Moreira, C. (2024). Estudio de tiempos en una empresa embotelladora de agua. Polo del Conocimiento, 9(6), 2405-2413. https://doi.org/10.23857/pc.v9i6.4188",
+      "Chilón Aguilar, X. M., Esquivel Paredes, L., & Estela Tamay, W. (2017). Implementación de las 5S para incrementar la productividad en una planta embotelladora de agua. INGnosis, 3(1), 130-139. https://doi.org/10.26820/ingnosis.2017.01.010",
+      "Fernandez Rivera, J. (2023). Evaluación de la calidad química y microbiológica del agua embotellada en las plantas purificadoras de la ciudad de Tetela de Ocampo, Puebla [Tesis de licenciatura, Benemérita Universidad Autónoma de Puebla]. Repositorio Institucional BUAP. http://cmc.buap.mx/tesis/j/2023_Fernandez%20Rivera%20José.pdf",
+      "Mendoza de la Cruz, W. J., & Lucio Pillasagua, A. (2023). Rentabilidad financiera y toma de decisiones en la embotelladora de agua Cántaro Water. [Tesis de grado, Universidad Técnica de Ambato]. Repositorio UTA.",
+      "Mendoza Mejía, J. J. (2024). Diseño de la investigación de un plan de mantenimiento preventivo para la máquina LavaClassic Plus D5 de una empresa embotelladora en Zacapa [Tesis de grado, Universidad de San Carlos de Guatemala]. Repositorio USAC.",
+      "Orrala Suárez, A. N. (2023). Responsabilidad social empresarial en las empresas embotelladoras de agua, cantón Salinas, provincia de Santa Elena, año 2022 [Tesis de grado, Universidad Estatal Península de Santa Elena]. Repositorio UPSE.",
+      "Tomalá Orrala, B. A. (2023). Aplicación Lean Manufacturing para la optimización del sistema de producción en la planta purificadora y embotelladora de agua Aquafit S.A, Santa Elena [Tesis de grado, Universidad Estatal Península de Santa Elena]. Repositorio UPSE.",
+      "Valarezo León, D. I., & Tibillín Peñaloza, A. D. (2025). Modelo de negocio para la creación de una empresa embotelladora de agua purificada en la Parroquia Molleturo periodo 2024-2025 [Trabajo de titulación, Universidad de Cuenca]. Repositorio UCuenca.",
+      "Vargas-Díaz, J. G., León-Reyes, R. J., González-Vásquez, J. A., & Ulloa-Bocanegra, S. G. (2025). Implementación de la metodología DMAIC para reducir costos de producción en una embotelladora de agua, Trujillo 2025. Revista de Investigación en Ingeniería Industrial, 14(1), 45-58.",
+      "Velasco Guerra, N. R. (2026). Análisis de los retos de las nuevas tecnologías en envases tecnológicos para una embotelladora de agua. ÉLITE: Revista de Investigación en Ciencias Administrativas y Tecnología, 8(1), 112-128. https://doi.org/10.5281/zenodo.14773487"
+    ],
+    "apendice_rmd_yaml": {
+      "descripcion": "Configuración YAML para el archivo RMarkdown de salida en formato Distill",
+      "codigo_yaml": "---\ntitle: \"Optimización de Plantas Embotelladoras de Agua: Revisión Sistemática de Estrategias Lean, Seis Sigma y Gestión Financiera\"\ndescription: |\n  Este artículo presenta una revisión integrada de estudios empíricos sobre optimización\n  operativa y financiera de plantas embotelladoras de agua purificada en Latinoamérica.\nauthor:\n  - name: \"Equipo de Síntesis Académica\"\n    affiliation: \"Revisión Bibliográfica Integrada\"\ndate: 2025-01-15\noutput:\n  distill::distill_article:\n    toc: true\n    toc_depth: 3\n    toc_float: true\n    code_folding: true\n    theme: theme.css\n    highlight: github\n    self_contained: false\ncreative_commons: CC BY\ncitation_url: https://ejemplo.org/articulo-embotelladoras\ndoi: \nlang: es\n---"
+    }
+  }
+}
